@@ -20,6 +20,9 @@ while (isSunk = false) {
                 isSunk = true;
                 alert(`You sunk my battleship!`);
             }
+        } else {
+            alert(`MISS`);
         }
     }
 }
+
