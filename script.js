@@ -6,7 +6,7 @@ let hits = 0;
 let guesses = 0
 let isSunk = false;
 
-while (isSunk = false) {
+while (isSunk == false) {
     guess = prompt(`Ready, aim, fire! (enter a number between 0-6)`);
     if (guess < 0 || guess >6 ) {
         alert(`Please enter a valid number from 0-6!`);
@@ -26,3 +26,5 @@ while (isSunk = false) {
     }
 }
 
+let stats = `You took ${guesses} guesses to sink the battleship, which took means your shooting accuracy was ${3/guesses}.`;
+alert(stats);
